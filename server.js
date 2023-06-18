@@ -2,44 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
 const cors = require('cors');
-// const mysql = require('mysql');
 const knex = require('knex')
-// const Connection = require('mysql/lib/Connection');
-
-// let databases = mysql.createConnection({
-//     connectionLimit : 10,
-//     host: 'localhost',
-//     user: 'root',
-//     password: '',
-//     database: 'heavyduty'
-// });
-
-
-
-// connection.connect(function (err) {
-//     if (err) {
-//         return console.error('error: ' + err.message);
-//     }
-    
-//     // let createCustomer = `CREATE TABLE if not exists customer (
-//     //     id int primary key auto-increment, title varchar(255)not null,
-//     //     completed tinyint(1) not null default 0 )`;
-    
-//     // connection.query(createCustomer, function (err, results, fields) {
-//     //     if (err) {
-//     //         console.log(err.message);
-//     //     }
-//     // });
-    
-//     // connection.end(function (err) {
-//     //     if (err) {
-//     //         return console.log(err.message);
-//     //     }
-//     // })
-
-//     console.log('connected to mysql server.');
-// });
-// console.log(mysql.select('*').from('users'));
 
 
 const db = knex({
